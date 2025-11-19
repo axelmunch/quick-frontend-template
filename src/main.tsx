@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import { BrowserRouter } from 'react-router'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import { BrowserRouter } from "react-router";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const lightThemeAvailable = true;
 const darkThemeAvailable = true;
@@ -31,7 +31,7 @@ const theme = createTheme({
           main: "#00ff00",
         },
         custom: {
-          accent: "#ff0000"
+          accent: "#ff0000",
         },
       },
     },
@@ -41,14 +41,14 @@ const theme = createTheme({
           main: "#0000ff",
         },
         custom: {
-          accent: "#ff0000"
+          accent: "#ff0000",
         },
       },
     },
   },
 });
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
@@ -56,5 +56,5 @@ createRoot(document.getElementById('root')!).render(
         <App />
       </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);
