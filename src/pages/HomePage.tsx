@@ -1,6 +1,7 @@
 import { useApp } from "../AppContext";
 import reactLogo from "/react.svg";
 import viteLogo from "/vite.svg";
+import testData from "../data/test.json";
 
 export default function HomePage() {
   const { count, setCount, showMessage } = useApp();
@@ -15,7 +16,7 @@ export default function HomePage() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Quick Frontend Template</h1>
+      <h1>{testData.name}</h1>
       <div className="card">
         <button
           onClick={() => {
