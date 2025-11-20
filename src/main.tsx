@@ -29,7 +29,7 @@ const theme = createTheme({
     light: lightThemeAvailable && {
       palette: {
         primary: {
-          main: "#00ff00",
+          main: "#0000ff",
         },
         custom: {
           accent: "#ff0000",
@@ -39,7 +39,7 @@ const theme = createTheme({
     dark: darkThemeAvailable && {
       palette: {
         primary: {
-          main: "#0000ff",
+          main: "#00ff00",
         },
         custom: {
           accent: "#ff0000",
